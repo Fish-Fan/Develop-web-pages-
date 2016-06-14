@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 25%;
+
+    margin: 20px auto;
+}
+
+.wrap{
+    width: 25%;
+    margin: 20px auto;
+    padding-left: 150px;
+}
+.reset input,.submit input{
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+
+}
+.reset input{
+    background-color: #8a8d94;
+}
+.submit input{
+    background-color: #00a57f;
+    margin-left: 50px;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrap{
+    width: 510px;
+    margin: 50px auto;
+    border: 2px solid #000;
+}
+.wrap h2{
+    text-align: center;
+    padding: 5px;
+}
+.wrap table{
+    width: 100%;
+}
+.wrap table th{
+    font-size: 18px;
+    width: 33%;
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    border: 1px solid #000;
+}
+.wrap table th img{
+    width: 160px;
+    height: 160px;
+}
+.wrap table th a{
+    text-decoration: none;
+    color: #02ADFF;
+}

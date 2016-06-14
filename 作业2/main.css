@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrap{
+    width: 1000px;
+    margin: 100px auto;
+}
+.goods{
+    width: 200px;
+    height: 300px;
+    margin: 20px 10px;
+    float: left;
+}
+.goods img{
+    width: 200px;
+    height: 200px;
+}
+.goods p{
+    text-align: center;
+}

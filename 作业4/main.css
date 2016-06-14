@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 40%;
+    margin: 20px auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+table tr td{
+    border: 1px solid #000;
+}
+table img{
+    width: 150px;
+    height: 120px;
+}
