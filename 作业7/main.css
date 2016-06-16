@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    height: 38px;
+    background-color: #E50150;
+}
+.nav{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 38px;
+    overflow: hidden;
+}
+.nav ul li{
+    display: inline-block;
+    float: left;
+    padding: 0 10px;
+}
+.nav ul li a{
+    color: #F2F2F2;
+}
+.nav ul li a:hover{
+    color: #adadad;
+}
+.top-bar{
+    height: 28px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #989898;
+}
+.top-bar .top-bar-left{
+    width: 300px;
+    height: 28px;
+    float: left;
+    padding-left: 60px;
+    background-color: #F2F2F2;
+}
+.top-bar .top-bar-left ul li{
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+    color: #6A6A6A;
+    font-size: 12px;
+}
+.top-bar .top-bar-left ul li a,.top-bar .top-bar-right ul li a{
+    font-size: 12px;
+    color: #6A6A6A;
+}
+.top-bar .top-bar-left ul li a:hover,.top-bar-right ul li a:hover{
+    color: #E50150;
+}
+.top-bar .top-bar-right{
+    height: 20px;
+    width: 280px;
+    float: right;
+    margin-top: 4px;
+}
+.top-bar .top-bar-right ul li{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    padding: 0 5px;
+    line-height: 20px;
+}
+.top-bar .top-bar-right-right{
+    width: 200px;
+    height: 28px;
+    float: right;
+    font-size: 12px;
+    line-height: 28px;
+}
+.top-bar .top-bar-right-right ul li span a{
+    color: #E50150;
+}
+.top-bar .top-bar-right-right ul li{
+    display: inline-block;
+    line-height: 28px;
+    float: left;
+    padding: 0 5px;
+}
+.top-bar .top-bar-right-right ul li a{
+    color: #6A6A6A;
+    font-size: 12px;
+}
+.top-bar .top-bar-right-right ul li a:hover{
+    color: #E50150;
+}
+.logo-sear{
+    height: 110px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.logo-sear .container-img{
+    width: 320px;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+}
+.logo-sear .container-img img{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+.logo-sear .search{
+    width: 539px;
+    height: 38px;
+    position: absolute;
+    top: 36px;
+    left: 360px;
+    overflow: hidden;
+}
+.logo-sear input{
+    width: 426px;
+    height: 18px;
+    padding: 7px 5px;
+    border: 3px solid #E50150;
+    border-right: none;
+    outline: none;
+    float: left;
+}
+.logo-sear button{
+    width: 100px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    border: none;
+    background-color: #E50150;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+    float: left;
+}
+#cart{
+    display: block;
+    width: 140px;
+    height: 34px;
+    position: absolute;
+    top: 38px;
+    right: 50px;
+    background-color: #F8F8F8;
+    border: 2px solid #E5E5E5;
+    cursor: pointer;
+}
+#cart img{
+    padding: 3px 5px;
+    background-color: #FFFFFF;
+}
+#cart text{
+    position: relative;
+    bottom: 10px;
+    color: #666666;
+    font-size: 14px;
+}
+.bottom-nav-wrap{
+    height: 38px;
+    background-color: #040404;
+}
+.bottom-nav-wrap .nav-bottom{
+    width: 572px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bottom-nav-wrap .nav-bottom li{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+}
+.bottom-nav-wrap .nav-bottom li a{
+    display: inline-block;
+    float: left;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 0 10px;
+}
+.nav-bottom li a:hover{
+    background-color: #E50150;
+}
+
