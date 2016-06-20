@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrap .nav{
+    width: 330px;
+    margin: 0px auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.wrap .nav ul{
+    list-style: none;
+}
+.wrap .nav ul li{
+    width: 100px;
+    background-color: black;
+    text-align: center;
+    padding: 3px 5px;
+}
+.wrap .nav .gear li:hover,.wrap .nav .file li:hover,.wrap .nav .plane li:hover{
+    background-color: aliceblue;
+}
+.wrap .nav .gear li:hover a,.wrap .nav .file li:hover a,.wrap .nav .plane li:hover a{
+    color: black;
+}
+.wrap .nav ul li a{
+    color: black;
+}
+.wrap .nav ul li a{
+    color: aliceblue;
+    font-size: 14px;
+}
+#gear1,#file1,#plane1{
+    display: inline-block;
+    float: left;
+    width: 110px;
+    line-height: 20px;
+    padding: 0;
+}
+.gear,.file,.plane{
+    float: left;
+    display: none;
+}
+#gear1:hover .gear{
+    display: block;
+}
+#file1:hover .file{
+    display: block;
+}
+#plane1:hover .plane{
+    display: block;
+}
+
