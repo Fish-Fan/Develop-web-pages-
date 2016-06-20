@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单的验证</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+    <style>
+        .wrap{
+            width: 600px;
+            margin: 100px auto;
+        }
+        table span{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <form action="" method="post" id="form1" name="form1">
+            <table cellspacing="10px">
+                <tr>
+                    <td colspan="3" align="center" style="font-size: 20px;color: brown">用户注册</td>
+                </tr>
+                <tr>
+                    <td>用户名</td>
+                    <td><input type="text" id="username" onblur="checkFormName()"></td>
+                    <td><span id="spanName"></span></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" id="password" onblur="checkFormPw()"></td>
+                    <td><span id="spanPassword"></span></td>
+                </tr>
+                <tr>
+                    <td>请再次输入密码</td>
+                    <td><input type="password" id="password1" onblur="checkFormPw1()"></td>
+                    <td><span id="spanPassword1"></span></td>
+                </tr>
+                <tr>
+                    <td>注册邮箱</td>
+                    <td><input type="text" id="mail" onblur="checkFormMail()"></td>
+                    <td><span id="spanMail"></span></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function checkFormName(){
+            var name = document.getElementById("username").value;
+            if(name == "")
+            {
+                document.getElementById("spanName").innerHTML="用户名不能为空";
+                return false;
+            }
+            else{
+                document.getElementById("spanName").innerHTML="";
+                return true;
+            }
+        }
+        function  checkFormPw(){
+            var psw = document.getElementById("password").value;
+            var len = psw.length;
+            if(len < 6)
+            {
+                document.getElementById("spanPassword").innerHTML="密码长度不能小于6位";
+                return false;
+            }
+            else
+            {
+                document.getElementById("spanPassword").innerHTML="";
+                return true;
+            }
+        }
+        function checkFormPw1(){
+            var psw = document.getElementById("password").value;
+            var psw1 = document.getElementById("password1").value;
+            if(psw != psw1)
+            {
+                document.getElementById("spanPassword1").innerHTML="两次输入的密码不一致,请重新输入";
+                return false;
+            }
+            else
+            {
+                document.getElementById("spanPassword1").innerHTML="";
+                return true;
+            }
+        }
+        function checkFormMail(){
+            var re = /^(\w+)(\.?)(\w+)(\w+\@\w+\.\w+)$/;
+            var a = re.test(document.getElementById("mail").value);
+            if(a)
+            {
+                document.getElementById("spanMail").innerHTML="";
+                return true;
+            }
+            else
+            {
+                document.getElementById("spanMail").innerHTML="请输入正确的邮箱地址";
+            }
+        }
+    </script>
+</body>
+</html>
