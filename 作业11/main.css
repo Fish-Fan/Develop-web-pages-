@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 80%;
+    margin: 100px auto;
+}
+form{
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}

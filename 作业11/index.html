@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现表单的验证</title>
+    <script src="jQuery1.8.js"></script>
+    <script>
+        $(function() {
+            $("#userName").focus(function() {
+                $("#spanUserName").text("");
+            });
+            $("#userName").blur(function() {
+              var username = $(":text#userName").val();
+
+              if(username == ""){
+                  $("#spanUserName").html("用户名不能为空").css("color","red");
+              }
+            $("#password").focus(function() {
+                $("#spanPsw").html("");
+            });
+            $("#password").blur(function () {
+                var psw = $("#password").val();
+                if(psw.length < 6){
+                    $("#spanPwd").html("密码长度不能小于6位").css("color","red");
+                }
+            });
+            $("#mail").focus(function() {
+                $("#spanMail").html("");
+            });
+            $("#mail").blur(function() {
+                var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+                var mailValue = $("#mail").val();
+                if(!reg.test(mailValue)){
+                    $("#spanMail").html("请输入正确的邮箱地址").css("color","red");
+                }
+                else {
+                    $("spanMail").html("");
+                }
+
+            });
+          });
+
+        });
+    </script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="post" id="form1">
+            <table align="center" cellspacing="20px">
+                <tr>
+                    <th colspan="3">jQuery实现表单的验证</th>
+                </tr>
+                <tr>
+                    <td>用户名:</td>
+                    <td><input type="text" id="userName"></td>
+                    <td><span id="spanUserName"></span></td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input type="password" id="password"></td>
+                    <td><span id="spanPwd"></span></td>
+                </tr>
+                <tr>
+                    <td>注册邮箱:</td>
+                    <td><input type="text" id="mail"></td>
+                    <td><span id="spanMail"></span></td>
+                </tr>
+                <tr>
+                    <td>上传文件</td>
+                    <td><input type="file" id="file"></td>
+                    <td><span id="spanFile"></span></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

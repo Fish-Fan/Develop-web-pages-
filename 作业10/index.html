@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.0.0.min.js"></script>
+    <script>
+       $(function(){
+         /*  $("#msg").html("这里是提示信息!");
+           $("div>ul>li:eq(2)").css("color","green");
+           $("[type = 'text']").css("color","red");
+           $("[type = 'password']").css("color","red");
+           $("li[id='test']").css("background-color","#999");
+           $("li:not(:last)").css("font-size","20px");*/
+
+           $("#toggle").toggle(function(){
+               $("li a").css("color","green");
+           },function(){
+               $("li a").css("color","red");
+           },function(){
+               $("li a").css("color","yellow");
+           });
+           /*$("div ul li a").mouseover(function () {
+               $("div ul li a").css("background-color","#999");
+           });
+           $("div ul li a").mouseout(function(){
+               $("div ul li a").css("background","none");
+           });*/
+
+
+
+       });
+
+    </script>
+    <title>Title</title>
+</head>
+<body>
+    <span id="msg"></span>
+    <div class="testClass ">
+        <ul>
+            <button id="toggle">toggle</button>
+            <li><a href="">test</a></li>
+            <li><a href="">test</a></li>
+            <li id="test">test</li>
+            <li id="test">test</li>
+        </ul>
+    </div>
+    <ul>
+        <li>这里是测试文本</li>
+        <li>这里是测试文本</li>
+        <li>这里是测试文本</li>
+    </ul>
+    <form action="">
+        用户名:<input type="text">
+        密码: <input type="password">
+        邮箱: <input type="text">
+
+    </form>
+
+</body>
+</html>
